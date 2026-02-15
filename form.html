@@ -23,12 +23,11 @@
             
             <p class="form-subtitle">Fill out the form below so we can understand your business and schedule your discovery chat. This helps us prepare the right setup and suggestions for you.</p>
             
-            <form class="contact-form" name="client-conversion-form" method="POST" action="/confirmation.html" data-netlify="true" netlify-honeypot="bot-field">
-                <!-- Hidden field for Netlify -->
+            <form class="contact-form" name="client-conversion-form" method="POST" action="./confirmation.html" data-netlify="true">
                 <input type="hidden" name="form-name" value="client-conversion-form" />
                 
-                <!-- Honeypot field for spam protection (hidden from users) -->
-                <p style="display: none;">
+                <!-- Honeypot field for spam protection -->
+                <p class="hidden-field">
                     <label>Don't fill this out if you're human: <input name="bot-field" /></label>
                 </p>
                 

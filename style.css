@@ -27,6 +27,7 @@ body{
 
 .logo-box{
     padding: 1.5rem 0;
+    margin: 0 auto;
 }
 
 .top-logo{
@@ -43,18 +44,26 @@ body{
 }
 
 .hero-section{
-    background-color: #151345;
+   
 }
 
 .hero-box{
     display: grid;
     grid-template-columns: 1fr;
+     background-color: #151345;
 }
 
 .hero-text{
     color: #fff;
-    /* width: 42.8rem; */
+    min-width: 30rem;
     padding: 4.5rem 3rem;
+    order: 2;
+   
+   
+}
+
+.hero-imagebox{
+order: 1;
 }
 
 .hero-title{
@@ -189,8 +198,8 @@ body{
 }
 
 .whothisisfor-content {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
     gap: 2rem;
 }
 
@@ -377,27 +386,26 @@ hr{
 
 .testimonial-header span{
     font-weight: 900;
-    padding-top: 3rem;
-    margin-bottom: 3rem;
+
 }
 
 .testimonial-container{
     display: flex;
     flex-direction: column;
-     gap: 2rem;
+    gap: 2rem;
+    align-items: center;
 
 }
 
 .testimonial-card{
-     background-color: hsla(216, 17%, 72%, 0.164);  
-    width: 37rem;
-    height: 26.7rem;
-    min-height: 25.8rem;
+    background-color: hsla(216, 17%, 72%, 0.164);  
+    max-width: 37rem;
+    max-height: 29rem;
     text-align: center;
     border-radius: 20px;
-    padding: 0rem 2rem 2rem 2rem;
+    padding: 0rem 2rem 1rem 2rem;
     /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); */
-    position: relative;
+       position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -409,8 +417,8 @@ hr{
     font-family: 'Playfair Display', serif;
     color: #15134510;
     position: absolute;
-    left: 120px;
-    top: -45px;
+    left: 29%;
+    top: -16%;
     transform: translateX(50%);
 
 }
@@ -423,6 +431,7 @@ hr{
     color: #000000;
     margin-bottom: 1rem;
     padding-top: 8rem;
+    
 }
 .testimonial-name{
       font-size: 1.5rem;
@@ -437,15 +446,14 @@ hr{
 
 /* Footer Section */
 .footer-section {
-    background-color: #151345;
-    padding: 4rem 3rem;
+
     margin-top: 4rem;
     text-align: center;
 }
 
 .footer-content {
-    max-width: 60rem;
-    margin: 0 auto;
+    background-color: #151345;
+    padding: 4rem 3rem;
 }
 
 .footer-title {

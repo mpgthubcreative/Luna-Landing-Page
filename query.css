@@ -1,119 +1,414 @@
-@media (min-width: 42rem) {
+
+@media (min-width: 768px){
    
 html{
     font-size: 62.5%;
 }
 
 .container{
-    min-width: 120rem;
-    
+    max-width: 768px;
 }
 
-.logo-box{
-    padding: 3rem 0;
+.containerhero, .containerfooter{
+    max-width: 1920px;
+    margin: 0 auto;
 }
+
+
+
 
 .top-logo{
     width: 32rem;
-    height: 6rem;
+    height: 4.5rem;
 }
 
+/* HERO SECTION */
+
 .hero-box{
-    display: grid;
     grid-template-columns: 1fr 1fr;
+
+}
+
+.hero-text{
+    padding: 3rem 4.8rem;
+    order: 1;
+    align-content: center;
 }
 
 .hero-imagebox{
 order: 2;
 }
 
-.hero-text{
-    order: 1;
-    width: 63.7rem;
-    padding: 6rem 9rem;
-
-}
-
 .hero-title{
-    font-size: 3.8rem;
-
+    font-size: 2.4rem;
+    margin-bottom: .5rem;
 }
+
 
 .hero-subtitle{
-    font-size: 1.8rem;
-
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
 }
 
 .cta-button{
-    font-size: 1.8rem;
+    padding: .5rem 2.5rem;
+}
+
+.hero-bottom{
+    font-size: .6rem;
 }
 
 
-.hero-bottombox{
-    display: flex;
-    flex-wrap: wrap;
-    column-gap: 1rem;
-    
-}
+/* HOW IT WORKS SECTION */
 
-/* HOW IT WORKS - SECTION */
+.howitworks-section{
+    margin: 0 auto;
+}
 
 .howitworks-grid {
-    display: flex;
-    gap: 3rem;
-    overflow-x: none;
-    padding-bottom: 2rem;
-   justify-content: space-between;
-   width: 90rem;
-   margin: 0 auto;
+     gap: 1.5rem;
+   justify-self: center
 }
 
 .howitworks-card {
-    width: 28rem;
-    height: 29rem;
+    padding: 1.6rem 1.6rem 1.8rem;
+    width: 18rem;
+    height: 18rem;
+
+
 }
-/* WHO THIS IS FOR - SECTION */
+
+.howitworks-icon {
+    width: 5rem;
+    height: 5rem;
+}
+
+.howitworks-subtitle{
+  font-size: .9rem;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .4px;
+}
+
+.howitworks-text {
+    font-size: .7rem;
+    font-weight: 200;
+}
+
+/* Who This Is For Section */
+
 
 .whothisisfor-content {
-    display: flex;
-    flex-direction: row;
-    gap: 5rem;
-    justify-content: center;
-    width: 90rem;
-    margin: 0 auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    width: 57rem;
+    justify-self: center;
+
 }
 
-.whothisisfor-imagebox {
-    width: 90rem;
-    height: auto;
+.whothisisfor-text{
+    align-content: center;
+}
+
+.whothisisfor-title {
+    font-size: 1.8rem;
+    margin-bottom: .5rem;
+}
+
+
+.whothisisfor-subtitle {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+   
 }
 
 .whothisisfor-list {
-    width: 40rem;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 
-.whothisisfor-subtitle {
-    font-size: 1.8rem;
+.whothisisfor-icon {
+    width: 2rem;
+    height: 2rem;
 }
 
-/* CHOOSE A SYSTEM - SECTION */
+.whothisisfor-label {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #151345;
+    letter-spacing: 0.5px;
+}
+
+/* Choose A System Section */
+
+.choosesystem-title {
+    width: auto;
+    margin-bottom: 2rem;
+
+}
 
 .choosesystem-grid {
-    display: flex;
+
     flex-direction: row;
-    border-radius: 14px;
-    overflow: hidden;
-    width: 90rem;
-    justify-content: center;
+  margin: 0 auto;
+   width: 57rem;
+}
+
+.choosesystem-heading {
+    font-size: 1.2rem;
+}
+
+.choosesystem-card1 h3 , .choosesystem-card2 h3{
+    padding: .5rem;
+    padding-top: 1rem;
+}
+
+.cardspacer{
+    padding: 1rem;
+}
+
+.choosesystem-list {
+    gap: 1rem;
+}
+
+
+.choosesystem-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    flex-shrink: 0;
+}
+
+.choosesystem-feature strong {
+    font-size: 1.2rem;
+    font-weight: 700;
+    display: block;
+    color: #fff;
+}
+
+.cardspacer{
+    padding: 2rem 4rem;
+}
+
+.choosesystem-description {
+    font-size: .8rem;
+}
+
+/* Testimonial Section */
+
+
+.testimonial-container{
+    flex-direction: row;
+    width: 67rem;
     margin: 0 auto;
 }
 
-.choosesystem-card1, .choosesystem-card2 {
-    width: 45rem;
+.testimonial-header{
+    padding-top: 1rem;
+    margin-bottom: 1rem;
 }
 
+.testimonial-card{ 
+    width: 27rem;
+    height: 18rem;
+    padding: 5.5rem 2rem 0rem 2rem;
+    /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); */
+    position: relative;
+    display: block;
+    flex-direction: column;
+    justify-content:unset;
+    gap: 0rem;
+  
+   
+}
+
+.quote{
+    font-size: 12rem;
+    font-family: 'Playfair Display', serif;
+    color: #15134510;
+    position: absolute;
+    left: 23%;
+    top: -22%;
+    transform: translateX(50%);
+
+}
+
+.testimonial-d{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0;
+}
+
+.testimonial-text{
+    font-size: .9rem;
+    line-height: 1.79;
+    margin: 0 auto;
+    max-width: 22rem;
+    color: #000000;
+    margin-bottom: 1rem;
+    padding-top: 0rem;
+}
+.testimonial-name{
+      font-size: 1rem;
+      font-weight: 700;
+      font-weight: 700;
+      color: #151345;
+}
+
+.testimonial-title{
+    font-size: .9rem;
+}
+
+/* footer section */
+
+.footer-content {
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: #151345;
+    padding: 4rem 3rem;
+}
+
+.footer-cta {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+    width: 33rem;
+    padding: 1rem 2rem;
+}
+
+.footer-title {
+    font-size: 2.4rem;
+}
+
+.footer-title span {
+    color: #FFBA26;
+}
+
+.footer-subtitle {
+    font-size: 1.2rem;
+    padding: 0 7rem;
+}
+
+}
+
+
+@media (min-width: 1024px){
+
+.hero-text{
+    order: 1;
+     padding: 3rem 6.5rem;
+  
+}
+
+.hero-title{
+    font-size: 3rem;
+    margin-bottom: .5rem;
+}
+
+
+.hero-subtitle{
+    font-size: 1.7rem;
+    margin-bottom: 1.5rem;
+}
+
+.hero-bottom{
+    font-size: .8rem;
+}
+
+/* HOW IT WORKS SECTION */
+
+
+.howitworks-card {
+    padding: 1.6rem 1.6rem 1.8rem;
+    width: 28rem;
+    height: 24rem;
+}
+
+.howitworks-icon {
+    width: 6.7rem;
+    height: 6.7rem;
+}
+
+.howitworks-subtitle{
+  font-size: 1.4rem;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .4px;
+}
+
+.howitworks-text {
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+/* Who This Is For Section */
+
+
+.whothisisfor-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    width: 87rem;
+    justify-self: center;
+
+}
+
+.whothisisfor-text{
+    align-content: center;
+}
+
+.whothisisfor-title {
+    font-size: 2.5rem;
+    margin-bottom: .5rem;
+}
+
+
+.whothisisfor-subtitle {
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+   
+}
+
+.whothisisfor-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 2.5rem;
+}
+
+.whothisisfor-icon {
+    width: 2rem;
+    height: 2rem;
+}
+
+.whothisisfor-label {
+    font-size: 1.6rem;
+    font-weight: 600;
+    color: #151345;
+    letter-spacing: 0.5px;
+}
+
+/* Choose A System Section */
+.container{
+    max-width: 1024px;
+}
+
+
 .choosesystem-title {
-    width: 100%;
+    width: auto;
+    margin-bottom: 2rem;
+
+}
+
+.choosesystem-grid {
+
+    flex-direction: row;
+   width: 87rem;
+   justify-content: center;
 
 }
 
@@ -121,58 +416,406 @@ order: 2;
     font-size: 2.2rem;
 }
 
+.choosesystem-card1 h3 , .choosesystem-card2 h3{
+    padding: 2.2rem;
+    padding-top: 2rem;
+}
+
+.cardspacer{
+    padding: 1rem;
+}
+
+.choosesystem-list {
+    gap: 1rem;
+}
+
+
+.choosesystem-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    flex-shrink: 0;
+}
+
+.choosesystem-feature strong {
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: block;
+    color: #fff;
+}
+
+.cardspacer{
+    padding: 2rem 4rem;
+}
+
+.choosesystem-description {
+    font-size: 1.3rem;
+}
+
+/* Testimonial Section */
+
+
 .testimonial-container{
-    display: flex;
     flex-direction: row;
-     gap: 2rem;
+    width: 97rem;
+    margin: 0 auto;
+}
+
+.testimonial-header{
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.testimonial-card{ 
+    width: 34rem;
+    height: 23rem;
+    padding: 5.5rem 2rem 1rem 2rem;
+    /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    
+}
+
+.quote{
+    font-size: 12rem;
+    font-family: 'Playfair Display', serif;
+    color: #15134510;
+    position: absolute;
+    left: 32%;
+    top: -15%;
+    transform: translateX(50%);
 
 }
 
-/* FOOTER-SECTION */
+.testimonial-d{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.testimonial-text{
+    font-size: 1.3rem;
+    line-height: 1.79;
+    margin: 0 auto;
+    max-width: 29rem;
+    color: #000000;
+    margin-bottom: 0rem;
+    padding-top: 0rem;
+    
+}
+.testimonial-name{
+      font-size: 1.4rem;
+      font-weight: 700;
+      font-weight: 700;
+      color: #151345;
+}
+
+.testimonial-title{
+    font-size: 1.2rem;
+}
+
+/* footer section */
+
+.footer-content {
+    max-width: 1920px;
+    margin: 0 auto;
+    background-color: #151345;
+    padding: 4rem 3rem;
+}
+
+.footer-cta {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+    width: 33rem;
+    padding: 1rem 2rem;
+}
 
 .footer-title {
     font-size: 3.8rem;
+}
 
+.footer-title span {
+    color: #FFBA26;
 }
 
 .footer-subtitle {
     font-size: 1.8rem;
-    width: 63.7rem;
-   margin: 0 auto;
-
-}
-
-.footer-check {
-    width: 1.4rem;
-    height: 1.4rem;
+    padding: 0 16rem;
 }
 
 .footer-feature-text {
     font-size: 1.4rem;
+    color: #ffffff;
+    margin: 0;
+}
+
+
+
+
+
 
 }
 
-.footer-content {
-    max-width: 81rem;
+@media (min-width: 1200px){
+
+.hero-text{
+    order: 1;
+     padding: 3rem 8rem;
+  
+}
+
+.hero-title{
+    font-size: 3.8rem;
+    margin-bottom: 1rem;
+}
+
+
+.hero-subtitle{
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-bottom{
+    font-size: 1rem;
+}
+
+.cta-button{
+    padding: .5rem 2.5rem;
+    font-size: 1.8rem;
+}
+
+.howitworks-card {
+    padding: 1.6rem 1.6rem 1.8rem;
+    width: 34rem;
+    height: 28rem;
+}
+
+.howitworks-icon {
+    width: 6.7rem;
+    height: 6.7rem;
+}
+
+.howitworks-subtitle{
+  font-size: 1.6rem;
+  color: #fff;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .4px;
+}
+
+.howitworks-text {
+    font-size: 1.2rem;
+    font-weight: 200;
+}
+
+.whothisisfor-content {
+    grid-template-columns: 1fr 1fr;
+    gap: 5rem;
+    width: 105rem;
+    justify-self: center;
+
+}
+
+/* Choose A System Section */
+.container{
+    max-width: 1200px;
+}
+
+
+.choosesystem-title {
+    width: auto;
+    margin-bottom: 2rem;
+
+}
+
+.choosesystem-grid {
+
+flex-direction: row;
+   width: 105rem;
+   justify-content: center;
+
+
+
+}
+
+.choosesystem-heading {
+    font-size: 2.2rem;
+}
+
+.choosesystem-card1 h3 , .choosesystem-card2 h3{
+    padding: 2.2rem;
+    padding-top: 2rem;
+}
+
+.cardspacer{
+    padding: 1rem;
+}
+
+.choosesystem-list {
+    gap: 1rem;
+}
+
+
+.choosesystem-icon {
+    width: 2.4rem;
+    height: 2.4rem;
+    flex-shrink: 0;
+}
+
+.choosesystem-feature strong {
+    font-size: 1.8rem;
+    font-weight: 700;
+    display: block;
+    color: #fff;
+}
+
+.cardspacer{
+    padding: 2rem 10rem;
+}
+
+.choosesystem-description {
+    font-size: 1.3rem;
+}
+
+
+/* Testimonial Section */
+
+
+.testimonial-container{
+    flex-direction: row;
+    width: 115rem;
     margin: 0 auto;
 }
 
+.testimonial-header{
+    padding-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.testimonial-card{ 
+    width: 43rem;
+    height: 25rem;
+    padding: 5.5rem 2rem 1rem 2rem;
+    /* box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    
+}
+
+.quote{
+    font-size: 12rem;
+    font-family: 'Playfair Display', serif;
+    color: #15134510;
+    position: absolute;
+    left: 35%;
+    top: -13%;
+    transform: translateX(50%);
+
+}
+
+.testimonial-d{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.testimonial-text{
+    font-size: 1.3rem;
+    line-height: 1.79;
+    margin: 0 auto;
+    max-width: 29rem;
+    color: #000000;
+    margin-bottom: 0rem;
+    padding-top: 0rem;
+    
+}
+.testimonial-name{
+      font-size: 1.4rem;
+      font-weight: 700;
+      font-weight: 700;
+      color: #151345;
+}
+
+.testimonial-title{
+    font-size: 1.2rem;
+}
+
+
+.footer-subtitle {
+    font-size: 1.8rem;
+    padding: 0 22rem;
+}
+
 .footer-cta {
-   width: 33.9rem;
-   padding: 1.5rem 0;
-   font-size: 2rem;
-   margin: 1.5rem;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+    width: 36rem;
+    padding: 1.5rem 2rem;
 }
 
-.form-container {
-    width: 120rem;
+
+
+
+
+
+
+
+
 
 }
 
-.form-content {
-    padding: 5rem 6rem;
-    width: 90rem;
+@media (min-width: 1400px){
+
+.hero-text{
+    order: 1;
+     padding: 3rem 12rem;
+  
 }
+
+.hero-title{
+    font-size: 4.4rem;
+    margin-bottom: 1rem;
+}
+
+
+.hero-subtitle{
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+}
+
+.hero-bottom{
+    font-size: 1rem;
+}
+
+.cta-button{
+    padding: .5rem 2.5rem;
+    font-size: 2rem;
+}
+
+.footer-subtitle {
+    font-size: 1.8rem;
+    padding: 0 40rem;
+}
+
+.footer-cta {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s ease;
+    width: 40rem;
+    padding: 1.5rem 2rem;
+}
+
+
+
 
 
 }

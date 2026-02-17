@@ -56,7 +56,13 @@ order: 2;
 
 .hero-bottom{
     font-size: .6rem;
+    justify-content: space-between;
 }
+
+.hero-bottombox{
+    justify-content: space-between;
+}
+
 
 
 /* HOW IT WORKS SECTION */
@@ -317,6 +323,7 @@ order: 2;
 
 .hero-bottom{
     font-size: .8rem;
+   
 }
 
 /* HOW IT WORKS SECTION */
@@ -580,9 +587,17 @@ order: 2;
 }
 
 .hero-bottom{
-    font-size: 1rem;
+    font-size: 1.2rem;
+    
 }
 
+.hero-bottombox{
+    column-gap: .5rem;
+}
+
+.hero-bottom-text{
+    font-size: 1rem;
+}
 .cta-button{
     padding: .5rem 2.5rem;
     font-size: 1.8rem;
@@ -799,6 +814,15 @@ flex-direction: row;
 .cta-button{
     padding: .5rem 2.5rem;
     font-size: 2rem;
+}
+
+.hero-bottombox{
+    columns: 2rem;
+
+}
+
+.hero-bottom-text{
+    font-size: 1rem;
 }
 
 .footer-subtitle {
